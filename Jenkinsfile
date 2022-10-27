@@ -36,7 +36,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo "========executing Deploy========"
-                sh '.jenkins/scripts/deliver.sh'
+                sh './jenkins/scripts/deliver.sh'
             }
             post{
                 always{
